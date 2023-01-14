@@ -1,3 +1,32 @@
 :root {
-    
+    --clr-black: #343434;
+    --clr-black-2: #232323;
+    --clr-pry-green: #00DEA5;
+    --clr-sec-orange: #FF8F2A;
+    --clr-white: #ffffff;
+
+    --ff-pry-header: 'Fredoka One', cursive;
+    --ff-sec-body: 'Nunito Sans', sans-serif;
+    --ff-tertiary-subhead: 'Quicksand', sans-serif;
+
+    --font-family: 'Nunito', sans-serif; /* Unused */
+
+    --fs-hero-header: 80px;
+    --fs-bd-header: 50px;
+    --fs-bd-title: 30px;
+
+    --bdr-radius: 15px;
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    /* MOBILE */
+    --fs-m-hero-header: 50px;
+    --fs-m-bd-header: 30px;
+    --fs-m-title: 18px;
+    --fs-m-body: 16px;
 }
+
