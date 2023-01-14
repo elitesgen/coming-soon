@@ -30,6 +30,7 @@
     --fs-m-body: 16px;
 }
 
+/* =====RESET START=====  */
 * {
     margin: 0;
     padding: 0;
@@ -96,4 +97,11 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+/* RESET END */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
