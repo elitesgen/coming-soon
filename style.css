@@ -108,3 +108,25 @@ select {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+p {
+    font-family: var(--ff-sec-body);
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--clr-black-2);
+    /* background-color: #1a1a1a; */
+    padding-block: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: var(--clr-white);
+    margin-inline: 6rem;
+}
+
+footer span {
+    color: var(--clr-sec-orange);
+}
