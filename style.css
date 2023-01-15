@@ -14,7 +14,8 @@
     /* Font size desktop */
     --fs-hero-header: 80px;
     --fs-bd-header: 50px;
-    --fs-bd-title: 30px;
+    --fs-subheader: 30px;
+    --fs-title: 20px;
     --fs-body: 18px;
 
     /* Border Radius */
@@ -108,6 +109,7 @@ select {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    /* padding-inline: 10px; */
 }
 
 p {
