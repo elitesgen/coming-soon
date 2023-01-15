@@ -27,10 +27,11 @@
     --breakpoint-xl: 1200px;
 
     /* MOBILE */
-    --fs-m-hero-header: 50px;
+    --fs-m-hero-header: 40px;
     --fs-m-bd-header: 30px;
-    --fs-m-title: 18px;
-    --fs-m-body: 16px;
+    --fs-m-subheader: 22px;
+    --fs-m-title: 20px;
+    --fs-m-body: 18px;
 }
 
 /* =====RESET START=====  */
