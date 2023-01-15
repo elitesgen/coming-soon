@@ -11,10 +11,13 @@
 
     --font-family: 'Nunito', sans-serif; /* Unused */
 
+    /* Font size desktop */
     --fs-hero-header: 80px;
     --fs-bd-header: 50px;
     --fs-bd-title: 30px;
+    --fs-body: 18px;
 
+    /* Border Radius */
     --bdr-radius: 15px;
 
     --breakpoint-xs: 0;
