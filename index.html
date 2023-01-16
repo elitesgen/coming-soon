@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="icon" type="image/png" sizes="35x30" href="./images/logo-small.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One& family=Nunito+Sans&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
     <title>egen</title>
 </head>
 <body>
@@ -38,11 +41,51 @@
             </div>
         </section>
 
+        <section class="carousel">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./images/heart-2.png.png" alt="">
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img src="./images/heart-3.png.png" alt="">
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img src="./images/heart-2.png.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./images/heart-3.png.png" alt="">
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <img src="./images/heart-2.png.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./images/heart-3.png.png" alt="">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">1</div>
+                <div class="swiper-button-next">2</div>
+            </div>
+        </section>
+
         <footer>
             <div class="container">
                 <p>© 2023 <span>Elitesgen Foundation,</span> All Rights Reserved.</p>
             </div>
         </footer>
     </div>
+
 </body>
 </html>
