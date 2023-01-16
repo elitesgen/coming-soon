@@ -125,6 +125,12 @@ p {
     font-weight: 700;
 }
 
+.nav-item {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--ff-tertiary-subhead);
+}
+
 /* GENERAL END */
 
 
@@ -134,7 +140,7 @@ p {
 
 /* ===== FOOTER ===== */
 footer {
-    background-color: var(--clr-black-2);
+    background-color: var(--clr-black-header);
     /* background-color: #1a1a1a; */
     padding-block: 10px;
 }
