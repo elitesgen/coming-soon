@@ -1,8 +1,9 @@
 :root {
-    --clr-black: #343434;
-    --clr-black-2: #232323;
+    --clr-black-body: #343434;
+    --clr-black-header: #232323;
     --clr-pry-green: #00DEA5;
     --clr-sec-orange: #FF8F2A;
+    --clr-tertiary-orange: #F65024;
     --clr-white: #ffffff;
 
     --ff-pry-header: 'Fredoka One', cursive;
