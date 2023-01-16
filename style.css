@@ -6,10 +6,10 @@
     --clr-tertiary-orange: #F65024;
     --clr-white: #ffffff;
 
+    /* Font Family */
     --ff-pry-header: 'Fredoka One', cursive;
     --ff-sec-body: 'Nunito Sans', sans-serif;
     --ff-tertiary-subhead: 'Quicksand', sans-serif;
-
     --font-family: 'Nunito', sans-serif; /* Unused */
 
     /* Font size desktop */
@@ -107,6 +107,8 @@ select {
 
 /* RESET END */
 
+
+/* ===== GENERAL ===== */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -116,6 +118,18 @@ select {
 p {
     font-family: var(--ff-sec-body);
 }
+
+.title {
+    font-size: var(--fs-m-title);
+    font-family: var(--ff-tertiary-subhead);
+    font-weight: 700;
+}
+
+/* GENERAL END */
+
+
+
+
 
 
 /* ===== FOOTER ===== */
