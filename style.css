@@ -178,6 +178,21 @@ p {
     color: var(--clr-sec-orange);
 }
 
+button {
+    background-color: var(--clr-pry-green);
+    color: var(--clr-white);
+    padding: .7rem 1.3rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50vw;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #00b98a;
+}
+
 @media (min-width: 1000px) {
     .container {
         padding-inline: 30px;
@@ -411,7 +426,7 @@ p {
     left: 0;
     background-size: cover;
     background-position: left center;
-    z-index: 0;
+    /* z-index: 0; */
 }
 
 .volunteer .container {
@@ -424,7 +439,12 @@ p {
 }
 
 .volunteer .apply .top {
-    width: 100%;
+    /* width: 100%; */
+    margin-bottom: 2rem;
+}
+
+.volunteer .apply .top p {
+    margin-bottom: 1rem;
 }
 
 .volunteer .apply .bottom {
@@ -432,8 +452,7 @@ p {
     border-radius: var(--bdr-radius);
     border: 1px solid #D8D8D8;
     box-shadow: 0 0 10 0 rgb(0 0 0 / 1);
-    color: #00DEA5;
-    padding: 1rem;
+    padding-inline: 1rem;
 }
 
 .volunteer .apply .bottom .apply-row {
@@ -441,8 +460,22 @@ p {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #D8D8D8;
+    padding-block: 1rem;
 }
 
+.volunteer .apply .bottom button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    color: var(--clr-black-header);
+    border: 2px solid var(--clr-tertiary-orange);
+    transition: color 100ms ease-in-out;
+}
+
+.volunteer .apply .bottom button:hover {
+    color: var(--clr-tertiary-orange);
+}
 
 
 
