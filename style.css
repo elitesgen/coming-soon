@@ -442,15 +442,25 @@ p {
 footer {
     background-color: var(--clr-black-header);
     /* background-color: #1a1a1a; */
-    padding-block: 10px;
+    padding-block: 1.3rem;
 }
 
 footer p {
     text-align: center;
     color: var(--clr-white);
-    margin-inline: 6rem;
+    margin: 0 auto;
 }
 
 footer span {
     color: var(--clr-sec-orange);
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding-block: 10px;
+    }
+
+    footer p {
+        max-width: 23ch;
+    }
 }
