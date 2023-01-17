@@ -131,6 +131,17 @@ p {
     font-family: var(--ff-tertiary-subhead);
 }
 
+.header {
+    font-size: 30px;
+    font-family: var(--ff-pry-header);
+}
+
+.subheader {
+    font-size: 22px;
+    font-family: var(--ff-tertiary-subhead);
+    font-weight: 700;
+}
+
 /* GENERAL END */
 
 
@@ -140,22 +151,52 @@ p {
 
 /* ===== SWIPPER ===== */
 .carousel {
-    background-color: #FF8F2A;
+}
+
+.carousel .container {
+    margin-inline: 1rem;
+    background-color: var(--clr-tertiary-orange);
+    background-image: url(./images/pattern-small.png);
+    padding: 2.8rem 1.8rem;
+    border-radius: var(--bdr-radius);
+}
+
+.carousel .header,
+.carousel .subheader {
+    text-align: center;
+    color: var(--clr-white) ;
 }
 
 .swiper {
     /* width: 600px; */
-    height: 300px;
-    background-color: #00DEA5;
+    height: 250px;
+    /* background-color: #00DEA5; */
 }
 
 .swiper-wrapper {
-    background-color: #343434;
+    /* background-color: #343434; */
+    margin-top: 2rem;
 }
 
 .swiper-slide {
-    color: red;
-    width: 200px;
+    /* background-color: rgb(89, 67, 67); */
+    /* width: 200px; */
+}
+
+.swiper-slide img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* margin-bottom: .8rem; */
+}
+
+.swiper-slide p {
+    text-align: center;
+}
+
+.swiper-slide-active {
+    /* background-color: red; */
 }
 
 .swiper-button-prev {
