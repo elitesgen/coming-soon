@@ -10,7 +10,8 @@
     --ff-pry-header: 'Fredoka One', cursive;
     --ff-sec-body: 'Nunito Sans', sans-serif;
     --ff-tertiary-subhead: 'Quicksand', sans-serif;
-    --font-family: 'Nunito', sans-serif; /* Unused */
+    --font-family: 'Nunito', sans-serif;
+    /* Unused */
 
     /* Font size desktop */
     --fs-hero-header: 80px;
@@ -51,19 +52,81 @@
 html:focus-within {
     scroll-behavior: smooth;
 }
-  
+
 html,
 body {
     height: 100%;
-    -webkit-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
     /* by kevin powel */
 }
-  
+
 /* Set core body defaults */
 body {
     /* min-height: 100vh; */
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+}
+
+.container {
+    overflow: auto;
+    display: flex;
+}
+
+.box {
+    border: 0px solid;
+    width: 200px;
+    background-color: var(--clr-pry-green);
+    border-radius: 10px;
+    color: var(--clr-white);
+}
+
+.hero {
+    text-align: center;
+}
+
+#hero-img {
+    max-width: 350px;
+
+}
+
+#blt-pnt {
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    padding-top: 10%;
+    padding-left: 5%;
+    font-family: var(--ff-tertiary-subhead);
+    font-weight: bold;
+}
+
+#blt-pnt1 {
+    display: flex;
+    float: left;
+    padding-left: 10%;
+    padding-top: 10%;
+    font-family: var(--ff-tertiary-subhead);
+    font-weight: bold;
+}
+
+#abt-h>h1 {
+    font-family: var(--ff-pry-header);
+    color: var(--clr-black-header);
+}
+
+#abt-h>h3 {
+    font-family: var(--fs-m-subheader);
+    color: var(--clr-black-header);
+}
+
+#abt-h>h3>span {
+    font-family: var(--fs-m-subheader);
+    color: var(--clr-pry-green);
+}
+
+#abt-bdy {
+    font-family: var(--ff-sec-body);
+    font-size: var(--fs-body);
 }
 
 /* A elements that don't have a class get default styles */
@@ -85,16 +148,18 @@ button,
 textarea,
 select {
     font: inherit;
-    font-size: 100%; /* 1 */
-    margin: 0; /* 2 */
+    font-size: 100%;
+    /* 1 */
+    margin: 0;
+    /* 2 */
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
-     scroll-behavior: auto;
+        scroll-behavior: auto;
     }
-    
+
     *,
     *::before,
     *::after {
