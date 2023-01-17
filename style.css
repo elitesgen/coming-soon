@@ -113,6 +113,10 @@ select {
 
 
 /* ===== GENERAL ===== */
+body {
+    font-family: var(--ff-sec-body);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -121,6 +125,10 @@ select {
 
 h1, h2 {
     color: var(--clr-black-header);
+}
+
+h1 {
+    letter-spacing: .5px;
 }
 
 p {
@@ -167,21 +175,39 @@ p {
 /* GENERAL END */
 
 /* ===== ABOUT SECTION ===== */
-body {
-    font-family: var(--ff-sec-body);
+#about {
+    position: relative;
 }
 
-#about .container {
-    /* overflow: auto; */
-    /* display: flex; */
-    /* flex-direction: column-reverse; */
+#about .about-bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* width: calc(50% - 40px); */
+    width: calc(50% - 40px);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#about .about-bg {
+    background-image: url(./images/shape-5.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 /* top */
 #about .top {
     position: relative;
-    margin-top: 5rem;
-    margin-bottom: 4rem;
+    padding-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 #about .top .about-img {
@@ -193,17 +219,17 @@ body {
 }
 
 #about .heart-2 {
-    top: -20px;
+    top: 11%;
 }
 
 #about .heart-3 {
-    top: 50px;
+    top: 25%;
 }
 
 #about .imoji {
     width: 120px;
     height: auto;
-    top: 30%;
+    top: 40%;
 }
 
 #about .img-2 {
