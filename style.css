@@ -340,16 +340,15 @@ button:hover {
         align-items: center;
         gap: 1rem;
     }
-
+    
     #about .about-bg-half {
         transform: rotate(180deg);
-        width: 100%;
-        left: unset;
         top: 0;
-        bottom: 0;
-        right: -50%;
-        /* background-size: contain; */ 
-    }
+        left: unset;
+        right: 0;
+        width: 52%;
+        height: 100%;
+    }    
 
     #about .top {
         margin: unset;
@@ -487,6 +486,10 @@ button:hover {
 
 
 @media (min-width: 900px) {
+    .volunteer .container {
+        padding-top: 4rem;
+    }
+
     .volunteer .apply {
         display: flex;
         gap: 2rem;
@@ -585,8 +588,17 @@ button:hover {
     z-index: 2;
 }
 
-.swiper-slide p:nth-child(1) {
+.swiper-slide .label > * {
+    color: var(--clr-white);
+}
+
+.swiper-slide .title {
     margin-bottom: 10px;
+
+}
+
+.swiper-slide p:last-child {
+    font-weight: 600;
 }
 
 .swiper-slide-active img {

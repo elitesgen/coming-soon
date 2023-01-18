@@ -1,5 +1,3 @@
-
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -47,14 +45,4 @@ const swiper = new Swiper('.swiper', {
             // spaceBetween: 10
         }
       },
-
-    //   cssMode: true,
-    //   height: 100,
-    //   centeredSlidesBounds: true,
-
   });
-
-
-//   containerModifierClass	string	'swiper-'	
-// The beginning of the modifier CSS class that can be added to swiper container depending on different parameters
-  
