@@ -5,7 +5,11 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     centeredSlides: true,
-    autoplay: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    resistance: false,
   
     // Navigation arrows
     navigation: {
@@ -33,20 +37,20 @@ const swiper = new Swiper('.swiper', {
           spaceBetween: 10
         },
         // when window width is >= 800px
-        800: {
+        900: {
             slidesPerView: 5,
             spaceBetween: 10
         },
         // when window width is >= 120px
         1200: {
             slidesPerView: 7,
-            spaceBetween: 30
+            // spaceBetween: 10
         }
       },
 
     //   cssMode: true,
     //   height: 100,
-      centeredSlidesBounds: true,
+    //   centeredSlidesBounds: true,
 
   });
 
