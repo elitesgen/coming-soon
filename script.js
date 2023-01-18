@@ -1,27 +1,21 @@
+
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+    centeredSlides: true,
+    autoplay: true,
   
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
 
     // Breakpoints
-    // slidesPerView: 1,
-    // spaceBetween: 10,
+    slidesPerView: 1,
+    spaceBetween: 10,
     breakpoints: {
         // when window width is >= 320px
         320: {
@@ -36,14 +30,13 @@ const swiper = new Swiper('.swiper', {
         // when window width is >= 640px
         640: {
           slidesPerView: 4,
-          spaceBetween: 40
+          spaceBetween: 10
         }
       },
 
     //   cssMode: true,
     //   height: 100,
-      centeredSlides: true,
-    //   centeredSlidesBounds: true,
+      centeredSlidesBounds: true,
 
   });
 
