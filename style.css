@@ -520,15 +520,15 @@ button:hover {
     color: var(--clr-white);
 }
 
-.swiper {
-    /* min-height: 270px; */
-    /* height: 270px; */
-}
+/* .swiper {
+    min-height: 270px;
+    height: 270px;
+} */
 
 .swiper-button-prev,
 .swiper-button-next {
     position: absolute !important;
-    top: 90px !important;
+    top: 83px !important;
     background-color: var(--clr-white);
     border-radius: 50%;
     width: 65px !important;
@@ -542,23 +542,18 @@ button:hover {
 
 .swiper-button-prev {
     rotate: -135deg;
-    right: 50% !important;
+    right: 10rem ;
 }
 
 .swiper-button-next {
     rotate: 45deg;
 }
 
-
 @media (min-width: 500px) {
-    /* .swiper {
-        height: 250px;
-    } */
-
     .swiper-button-prev,
     .swiper-button-next {
-    display: block;
-}
+        display: block;
+    }
 }
 
 .swiper-wrapper {
@@ -567,7 +562,6 @@ button:hover {
 
 .swiper-slide {
     transition: all 200ms;
-    /* min-width: 400px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -586,7 +580,6 @@ button:hover {
     margin-top: 2rem;
     text-align: center;
     transition: .3s;
-    /* transition-delay: 150ms; */
     scale: 0;
     position: relative;
     z-index: 2;
@@ -596,17 +589,23 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.swiper-slide-active {
-    /* margin-inline: 50px !important; */
-    /* overflow: visible !important; */
-}
-
 .swiper-slide-active img {
     scale: 1.2;
 }
 
 .swiper-slide-active .label {
     scale: 1;
+}
+
+/* Hardcore manual spacing adjustment for big screen: might need adjustments */
+@media (min-width: 900px) {
+    .swiper-slide {
+        transform: translateX(-2.2rem) !important;
+    }
+
+    .swiper-slide-active {
+        margin-inline: 40px !important;
+    }   
 }
 
 
