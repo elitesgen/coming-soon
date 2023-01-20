@@ -462,16 +462,6 @@ button:hover {
     position: relative;
 }
 
-/* #about .about-bg {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: calc(50% - 40px);
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
 #about .about-bg {
     background-image: url(./images/shape-5.png);
     position: absolute;
@@ -551,12 +541,11 @@ button:hover {
 }
 
 #about .bottom .checkbox-group {
-    padding-block: 1.2rem;
+    padding-bottom: 1.2rem;
 }
 
 #about .bottom .checkbox-group li {
     margin-bottom: 6px;
-    /* display: flex; */
     align-items: center;
 }
 
@@ -628,6 +617,7 @@ button:hover {
     #about .bottom .checkbox-group {
         display: flex;
         gap: 3rem;
+        padding-top: .5rem;
         padding-bottom: 0;
     }
 
