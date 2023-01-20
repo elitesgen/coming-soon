@@ -1,14 +1,3 @@
-// const navigation = document.querySelector(".primary-navigation");
-// const navigationHeight = navigation.offsetHeight;
-
-// document.documentElement.style.setProperty(
-//   "--scroll-padding",
-//   navigationHeight + "px"
-// );
-
-
-
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -57,3 +46,18 @@ const swiper = new Swiper('.swiper', {
         }
       },
   });
+
+// const navigation = document.querySelector(".primary-navigation");
+// const navigationHeight = navigation.offsetHeight;
+
+// document.documentElement.style.setProperty(
+//   "--scroll-padding",
+//   navigationHeight + "px"
+// );
+
+// const heroHeight = document.querySelector('#hero');
+// console.log(heroHeight.scrollHeight);
+// const heroBg = document.querySelector('.hero-bg');
+// heroBg.style.height = heroHeight.scrollHeight + 'px';
+
+// console.log(heroBg.style);
