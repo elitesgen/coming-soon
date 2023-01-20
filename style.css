@@ -118,6 +118,11 @@ html {
     scroll-padding: var(--scroll-padding, 3rem);
 }
 
+/* this is to take off the underline on the button */
+a{
+    text-decoration: none;
+}
+
 body {
     font-family: var(--ff-sec-body);
 }
