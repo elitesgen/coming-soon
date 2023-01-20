@@ -415,11 +415,6 @@ button:hover {
         display: block;
     }
 
-    
-    .hero-right-text .subheader {
-        font-size: calc(var(--fs-m-subheader) - 3px);
-    }    
-
     .hero-left-text {
         margin-bottom: 2rem;
     }
@@ -427,6 +422,12 @@ button:hover {
     /* .hero-bg {
         bottom: 0;
     } */
+}
+
+@media (max-width: 400px) {
+    .hero-right-text .subheader {
+        font-size: calc(var(--fs-m-subheader) - 2px);
+    }  
 }
 
 @media (max-height: 750px) {
