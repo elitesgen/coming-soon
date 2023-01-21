@@ -30,6 +30,8 @@ toggleBtn.addEventListener("click", openSideBar);
 backdrop.addEventListener("click", closeSideBar);
 closeMenuBtn.addEventListener("click", closeSideBar);
 
+
+// Volunteer Swipper
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -86,10 +88,3 @@ const swiper = new Swiper('.swiper', {
 //   "--scroll-padding",
 //   navigationHeight + "px"
 // );
-
-// const heroHeight = document.querySelector('#hero');
-// console.log(heroHeight.scrollHeight);
-// const heroBg = document.querySelector('.hero-bg');
-// heroBg.style.height = heroHeight.scrollHeight + 'px';
-
-// console.log(heroBg.style);
