@@ -282,6 +282,11 @@ button:hover {
     color: var(--clr-white);
 }
 
+#hero .hero-flex ul li a {
+    display: flex;
+    align-items: center;
+}
+
 #hero .hero-flex ul li img {
     margin-right: 10px;
     width: 35px;
