@@ -229,6 +229,254 @@ button:hover {
 }
 /* GENERAL END */
 
+/*====== NAVBAR STYLES STARTS ====== */
+
+/* BACKDROP STYLING */
+.backdrop {
+  position: fixed;
+  top: 45px;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+header .container {
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  padding-inline: 0px;
+}
+
+/* MOBILE HEADER */
+
+.mobile-header__active {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  height: 60px;
+}
+
+/* EGEN LOGO */
+
+.header-logo {
+  width: 110px;
+}
+
+/* TOGGLE BUTTON STYLING */
+
+.toggle-button {
+  width: 1.7rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0rem;
+  transition: none;
+}
+
+.toggle-button:hover {
+  background-color: transparent;
+  border: none;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.25rem;
+  background: var(--clr-pry-green);
+  display: block;
+  margin: 0.25rem 0;
+}
+
+.menu-close-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  animation: sliding-in;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  padding: 0rem;
+  width: 25px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.menu-close-btn:hover {
+  background-color: transparent;
+  border: none;
+}
+
+/* SIDE BAR STYLING*/
+
+.side-bar {
+  font-family: var(--ff-tertiary-subhead);
+  position: fixed;
+  z-index: 101;
+  /* top: 45px; */
+  left: 0;
+  width: 100%;
+  /* height: 45vh; */
+  background-color: var(--clr-black-header);
+  display: none;
+}
+
+.side-bar__navs {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.side-bar__nav {
+  padding: 0.3rem 1rem;
+}
+
+.side-bar__nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.2rem 0;
+}
+
+/* MOBILE HOME NAV */
+
+.home-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 0rem 0rem;
+}
+
+.home-nav div {
+  background-color: #ffffff;
+  height: 35px;
+  width: 5px;
+}
+
+.side-bar__contact-info {
+  margin: 48px 20px 20px 20px;
+  color: var(--clr-white);
+}
+
+.side-bar__email-address h4 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.side-bar__email-address p {
+  font-family: var(--ff-tertiary-subhead);
+  color: var(--ff-tertiary-subhead);
+}
+
+.side-bar__social-media__link {
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* SIDEBAR ANIMATION CLASSES */
+.open {
+  display: block;
+  animation: sliding-in;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+.remove-side-bar {
+  animation: sliding-out;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  display: block;
+}
+
+@keyframes sliding-in {
+  0% {
+    top: 10px;
+  }
+  100% {
+    top: 57px;
+  }
+}
+
+@keyframes sliding-out {
+  0% {
+    top: 57px;
+  }
+  100% {
+    top: -1000px;
+  }
+}
+
+/* DESKTOP HEADER */
+
+.desktop-header {
+  display: none;
+}
+
+nav ul li a:hover {
+  color: var(--clr-pry-green);
+}
+
+@media (min-width: 576px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .backdrop {
+    display: none;
+  }
+
+  .desktop-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    height: 50px;
+  }
+
+  /* DESKTOP NAV  */
+
+  .desktop-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .desktop-home-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    justify-content: center;
+  }
+
+  .desktop-home-nav div {
+    background-color: orange;
+    height: 2px;
+    width: 40px;
+    border-radius: 3px;
+  }
+
+  .desktop-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: var(--ff-tertiary-subhead);
+  }
+}
+
+/* NAVBAR STYLES ENDS */
+
 /*======= HERO SECTION =======*/
 #hero {
     height: 100vh;
