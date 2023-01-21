@@ -805,7 +805,11 @@ nav ul li a:hover {
 }
 
 @media (min-width: 900px) {
-    #about .container{
+    #about {
+        padding-block: 2.5rem;
+    }
+
+    #about .container {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
@@ -850,6 +854,10 @@ nav ul li a:hover {
 
     #about .heart-2 {
         top: 7%;
+    }
+
+    #about .heart-3 {
+        top: 22%;
     }
 
     #about .bottom {
@@ -962,6 +970,11 @@ nav ul li a:hover {
         padding-top: 4rem;
     }
 
+    #volunteer .body-header {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
     #volunteer .apply {
         display: flex;
         gap: 2rem;
@@ -1070,7 +1083,7 @@ nav ul li a:hover {
 }
 
 .swiper-slide-active img {
-    scale: 1.2;
+    scale: 1.25;
 }
 
 .swiper-slide-active .label {
