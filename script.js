@@ -1,36 +1,3 @@
-// const toggleBtn = document.querySelector(".toggle-button");
-// const sideBar = document.querySelector(".side-bar");
-// const backdrop = document.querySelector(".backdrop");
-// const closeMenuBtn = document.querySelector(".menu-close-btn");
-
-// console.log(toggleBtn);
-// console.log(sideBar);
-
-// const openSideBar = (e) => {
-//   toggleBtn.style.display = "none";
-//   closeMenuBtn.style.display = "inline-block";
-
-//   sideBar.classList.remove("remove-side-bar");
-//   backdrop.classList.remove("remove-side-bar");
-//   sideBar.classList.add("open");
-//   backdrop.classList.add("open");
-// };
-
-// const closeSideBar = (e) => {
-//   toggleBtn.style.display = "block";
-//   closeMenuBtn.style.display = "none";
-
-//   sideBar.classList.add("remove-side-bar");
-//   backdrop.classList.add("remove-side-bar");
-//   sideBar.classList.remove("open");
-//   backdrop.classList.remove("open");
-// };
-
-// toggleBtn.addEventListener("click", openSideBar);
-// backdrop.addEventListener("click", closeSideBar);
-// closeMenuBtn.addEventListener("click", closeSideBar);
-
-
 // Volunteer Swipper
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -87,15 +54,23 @@ const bodyWrapper = document.querySelector('.wrapper');
 const navToggle = document.querySelector('.navbar-toggler');
 
 // Resize event handler to display appropriate navbar type
-window.addEventListener('resize', () => {
+window.addEventListener('resize', navDisplay)
+
+function navDisplay() {
   if (bodyWrapper.clientWidth >= '550') {
-    navbarNav.classList.add('navbar-expand');
+    // Show nav items incase hidden from mobile
+    navbarNav.style.visibility = 'visible';
+
     navbarNav.classList.remove('navbar-collapse');
+    navbarNav.classList.add('navbar-expand');
+
+    console.log('window resized');
   } else {
-    navbarNav.classList.add('navbar-collapse');
     navbarNav.classList.remove('navbar-expand');
+    navbarNav.classList.add('navbar-collapse');
   }
-})
+}
+navDisplay()
 
 // Set Navbar height to --scroll-padding variable
 const navigationHeight = navigation.offsetHeight;
@@ -130,7 +105,7 @@ navbarNav.addEventListener('transitionend', (e) => {
   if (e.propertyName === 'opacity') {
     console.log(navbarNav.classList);
     
-    if (navbarNav.classList.contains('collapse')) {
+    if (navbarNav.classList.contains('collapse') && bodyWrapper.clientWidth < 550) {
       // To prevent users from clicking invisible nav elements overlay
       navbarNav.style.visibility = 'hidden';
     }
@@ -149,3 +124,65 @@ navbarNav.addEventListener('click', (e) => {
   e.target.classList.add('active');
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const toggleBtn = document.querySelector(".toggle-button");
+// const sideBar = document.querySelector(".side-bar");
+// const backdrop = document.querySelector(".backdrop");
+// const closeMenuBtn = document.querySelector(".menu-close-btn");
+
+// console.log(toggleBtn);
+// console.log(sideBar);
+
+// const openSideBar = (e) => {
+//   toggleBtn.style.display = "none";
+//   closeMenuBtn.style.display = "inline-block";
+
+//   sideBar.classList.remove("remove-side-bar");
+//   backdrop.classList.remove("remove-side-bar");
+//   sideBar.classList.add("open");
+//   backdrop.classList.add("open");
+// };
+
+// const closeSideBar = (e) => {
+//   toggleBtn.style.display = "block";
+//   closeMenuBtn.style.display = "none";
+
+//   sideBar.classList.add("remove-side-bar");
+//   backdrop.classList.add("remove-side-bar");
+//   sideBar.classList.remove("open");
+//   backdrop.classList.remove("open");
+// };
+
+// toggleBtn.addEventListener("click", openSideBar);
+// backdrop.addEventListener("click", closeSideBar);
+// closeMenuBtn.addEventListener("click", closeSideBar);
