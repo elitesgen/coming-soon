@@ -87,15 +87,15 @@ const bodyWrapper = document.querySelector('.wrapper');
 const navToggle = document.querySelector('.navbar-toggler');
 
 // Resize event handler to display appropriate navbar type
-// window.addEventListener('resize', () => {
-//   if (bodyWrapper.clientWidth >= '550') {
-//     navbarNav.classList.add('navbar-expand');
-//     navbarNav.classList.remove('navbar-collapse');
-//   } else {
-//     navbarNav.classList.add('navbar-collapse');
-//     navbarNav.classList.remove('navbar-expand');
-//   }
-// })
+window.addEventListener('resize', () => {
+  if (bodyWrapper.clientWidth >= '550') {
+    navbarNav.classList.add('navbar-expand');
+    navbarNav.classList.remove('navbar-collapse');
+  } else {
+    navbarNav.classList.add('navbar-collapse');
+    navbarNav.classList.remove('navbar-expand');
+  }
+})
 
 // Set Navbar height to --scroll-padding variable
 const navigationHeight = navigation.offsetHeight;
