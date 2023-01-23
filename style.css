@@ -372,7 +372,7 @@ header {
         height: 2px;
         border-radius: 2rem;
         background-color: var(--clr-sec-orange);
-        bottom: 0;
+        bottom: 5px;
         right: 0;
         left: 0;
     }
