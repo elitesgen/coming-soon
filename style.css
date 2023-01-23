@@ -252,8 +252,8 @@ header {
 
 /* Mobile view */
 #navbarNav {
+    visibility: hidden;
     transition: 200ms;
-    backdrop-filter: blur(10px);
 }
 
 .collapse {

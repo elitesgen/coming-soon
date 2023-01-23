@@ -107,25 +107,33 @@ document.documentElement.style.setProperty(
 
 // Mobile nav toggle button  event handler
 navToggle.addEventListener('click', () => {
+
+  //First Make nav elements visible to be clickable
+  navbarNav.style.visibility = 'visible';
   if (navToggle.attributes.src.value == './images/menu-open.svg') {
     navToggle.attributes.src.value = './images/menu-close.svg';
 
     navbarNav.classList.replace('collapse', 'expand');
     bodyWrapper.style.setProperty('filter', 'blur(5px)');
-
-    // navbarNav.addEventListener('transitionend', () => {
-    //   console.log('transition ended');
-      
-    //   navbarNav.removeEventListener('transitionend', () => {
-    //     navbarNav.style.display = 'none';
-    //     console.log('display removed');
-    //   })
-    // })
+    
+    
   } else {
     navToggle.attributes.src.value = "./images/menu-open.svg";
     
     navbarNav.classList.replace('expand', 'collapse');
     bodyWrapper.style.setProperty('filter', 'none');
+  }
+})
+
+// Hide navbar overlay when hidden on mobile 
+navbarNav.addEventListener('transitionend', (e) => {
+  if (e.propertyName === 'opacity') {
+    console.log(navbarNav.classList);
+    
+    if (navbarNav.classList.contains('collapse')) {
+      // To prevent users from clicking invisible nav elements overlay
+      navbarNav.style.visibility = 'hidden';
+    }
   }
 })
 
