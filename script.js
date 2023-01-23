@@ -112,6 +112,15 @@ navToggle.addEventListener('click', () => {
 
     navbarNav.classList.replace('collapse', 'expand');
     bodyWrapper.style.setProperty('filter', 'blur(5px)');
+
+    // navbarNav.addEventListener('transitionend', () => {
+    //   console.log('transition ended');
+      
+    //   navbarNav.removeEventListener('transitionend', () => {
+    //     navbarNav.style.display = 'none';
+    //     console.log('display removed');
+    //   })
+    // })
   } else {
     navToggle.attributes.src.value = "./images/menu-open.svg";
     
