@@ -118,7 +118,6 @@ navToggle.addEventListener('click', () => {
     navbarNav.classList.replace('expand', 'collapse');
     bodyWrapper.style.setProperty('filter', 'none');
   }
-
 })
 
 // change active nav element on click

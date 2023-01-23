@@ -328,6 +328,7 @@ header {
     gap: 1.3rem;
 }
 
+/* Nav Desktop/tablet view */
 @media (min-width: 550px) {
     .navbar {
         padding-block: .6rem;
